@@ -18,7 +18,7 @@ function App() {
         <TodoItem />
         <TodoItem />
       </TodoList>
-      <CreateTodoButtonn text="Click me" onClick={handleClick} />
+      <CreateTodoButton text="Click me" onClick={handleClick} />
     </div>
   )
 }

@@ -1,9 +1,7 @@
-export const TodoCounter = () => {
+export const TodoCounter = ({ total, completed }) => {
   return (
-    <li>
-      <span>✓</span>
-      <p>Item 1</p>
-      <span>x</span>
-    </li>
+    <h1>
+      You have completed {completed} of {total} tasks.
+    </h1>
   )
 }

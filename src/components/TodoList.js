@@ -1,7 +1,3 @@
-export const TodoList = (props) => {
-  return (
-    <ul>
-        {props.children}
-    </ul>
-  )
+export const TodoList = ({ children }) => {
+  return <ul>{children}</ul>
 }

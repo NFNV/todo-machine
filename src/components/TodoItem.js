@@ -1,9 +1,9 @@
-export const TodoItem = () => {
+export const TodoItem = ({ text, completed }) => {
   return (
     <li>
-    <span>✓</span>
-    <p>Item 1</p>
-    <span>x</span>
-  </li>
+      <span>✓</span>
+      <p>{text}</p>
+      <span>x</span>
+    </li>
   )
 }

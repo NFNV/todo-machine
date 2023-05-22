@@ -1,0 +1,31 @@
+@keyframes buttonHoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.create-todo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-todo-button:hover {
+  background-color: #ff6347;
+  animation: buttonHoverAnimation 1s infinite;
+}

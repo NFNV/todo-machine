@@ -1,3 +1,5 @@
+import './TodoSearch.css'
+
 export const TodoSearch = () => {
-  return <input placeholder="Cut onion" />
+  return <input className="todo-search" placeholder="Filter here" />
 }

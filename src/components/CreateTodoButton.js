@@ -1,5 +1,5 @@
 import React from 'react';
-import './TodoCounter.css';
+import './CreateTodoButton.css';
 
 export const CreateTodoButton = () => {
   return <button className="create-todo-button">+</button>;

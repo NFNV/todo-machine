@@ -1,0 +1,35 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  background-color: #fa8072;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.todo-item span {
+  font-size: 18px;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.todo-item span:hover {
+  color: green; /* Green color when hovering over the checkmark */
+}
+
+.todo-item p {
+  flex-grow: 1;
+  margin: 0 10px;
+  color: white;
+}
+
+.todo-item span:last-child {
+  margin-left: 5px;
+}
+
+.todo-item span:last-child:hover {
+  color: red; /* Red color when hovering over the cross */
+}

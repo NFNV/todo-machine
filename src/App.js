@@ -3,6 +3,7 @@ import { TodoCounter } from "./components/TodoCounter"
 import { TodoSearch } from "./components/TodoSearch"
 import { TodoItem } from "./components/TodoItem"
 import { CreateTodoButton } from "./components/CreateTodoButton"
+import { Title } from "./components/Title"
 
 const defaultTodos = [
   { text: "Action 1", completed: false },
@@ -15,6 +16,7 @@ const defaultTodos = [
 function App() {
   return (
     <>
+      <Title />
       <TodoCounter completed={5} total={10} />
       <TodoSearch />
       <TodoList>

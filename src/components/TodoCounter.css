@@ -1,0 +1,15 @@
+.create-todo-button {
+    background-color: salmon;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .create-todo-button:hover {
+    background-color: #ff6347;
+  }
+  

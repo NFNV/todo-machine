@@ -1,4 +1,3 @@
-import "./App.css"
 import { TodoList } from "./components/TodoList"
 import { TodoCounter } from "./components/TodoCounter"
 import { TodoSearch } from "./components/TodoSearch"

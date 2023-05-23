@@ -1,9 +1,9 @@
 .todo-search {
   padding: 6px;
   border: none;
-  border-radius: 10px; /* Rounded shape */
-  background-color: salmon;
-  color: white;
+  border-radius: 10px;
+  background-color: #D0CFEC;
+  color: #989572;
   font-size: 14px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

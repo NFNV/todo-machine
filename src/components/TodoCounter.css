@@ -1,5 +1,8 @@
 .todo-counter {
-    color: salmon;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+  color: #EDC7CF;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #EDC7CF;
+  padding: 10px;
+  border-radius: 4px;
+}

@@ -1,12 +1,9 @@
-/* index.css */
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #353535;
-  color: #333333;
+  background-color: #6A8E7F;
   margin: 0;
   font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;

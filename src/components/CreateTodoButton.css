@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: salmon;
+  background-color: #EDC7CF;
   color: white;
   font-size: 30px;
   width: 60px;
@@ -26,6 +26,6 @@
 }
 
 .create-todo-button:hover {
-  background-color: #ff6347;
+  background-color: #EDC7CF;
   animation: buttonHoverAnimation 1s infinite;
 }

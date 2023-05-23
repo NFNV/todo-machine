@@ -1,7 +1,7 @@
 .todo-item {
   display: flex;
   align-items: center;
-  background-color: #fa8072;
+  background-color: #D0CFEC;
   padding: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -9,21 +9,21 @@
 }
 
 .todo-item span {
-  font-size: 18px;
-  color: white;
+  font-size: 30px; 
+  color: #C6AE82;
   margin-right: 5px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .todo-item span:hover {
-  color: green; /* Green color when hovering over the checkmark */
+  color: green; 
 }
 
 .todo-item p {
   flex-grow: 1;
   margin: 0 10px;
-  color: white;
+  color: #989572;
 }
 
 .todo-item span:last-child {
@@ -31,5 +31,5 @@
 }
 
 .todo-item span:last-child:hover {
-  color: red; /* Red color when hovering over the cross */
+  color: red;
 }

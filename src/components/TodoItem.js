@@ -1,11 +1,13 @@
-import './TodoItem.css'
+import "./TodoItem.css"
 
-export const TodoItem = ({ text, completed }) => {
+export const TodoItem = ({ text, completed, onComplete, onDelete }) => {
+  const itemClassName = completed ? "todo-item completed" : "todo-item"
+
   return (
-    <li className="todo-item">
-      <span>✓</span>
-      <p>{text}</p>
-      <span>x</span>
+    <li className={itemClassName}>
+      <span onClick={onComplete}>✓</span>
+      <p className="task-text">{text}</p>
+      <span onClick={onDelete}>x</span>
     </li>
   )
 }

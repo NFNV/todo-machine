@@ -1,11 +1,16 @@
 .todo-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #D0CFEC;
   padding: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
+}
+
+.todo-item.completed .task-text {
+  text-decoration: line-through;
 }
 
 .todo-item span {

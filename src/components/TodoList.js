@@ -1,5 +1,5 @@
-import './TodoList.css'
+import "./TodoList.css"
 
 export const TodoList = ({ children }) => {
-  return <ul lassName="todo-list">{children}</ul>
+  return <ul className="TodoList">{children}</ul>
 }

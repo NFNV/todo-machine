@@ -1,8 +1,11 @@
-.todo-counter {
-  color: #EDC7CF;
+.TodoCounter {
   font-size: 24px;
-  margin-bottom: 20px;
-  border: 1px solid #EDC7CF;
-  padding: 10px;
-  border-radius: 4px;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+  font-weight: normal;
+}
+
+.TodoCounter span {
+  font-weight: bold;
 }

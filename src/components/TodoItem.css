@@ -1,40 +1,20 @@
-.todo-item {
+.TodoItem {
+  background-color: #FAFAFA;
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #D0CFEC;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+  align-items: center;
+  margin-top: 24px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
 }
 
-.todo-item.completed .task-text {
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.TodoItem-p--complete {
   text-decoration: line-through;
-}
-
-.todo-item span {
-  font-size: 30px; 
-  color: #C6AE82;
-  margin-right: 5px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.todo-item span:hover {
-  color: green; 
-}
-
-.todo-item p {
-  flex-grow: 1;
-  margin: 0 10px;
-  color: #989572;
-}
-
-.todo-item span:last-child {
-  margin-left: 5px;
-}
-
-.todo-item span:last-child:hover {
-  color: red;
 }

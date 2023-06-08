@@ -1,6 +1,17 @@
-import React from 'react';
-import './CreateTodoButton.css';
+import React from "react"
+import "./CreateTodoButton.css"
 
 export const CreateTodoButton = () => {
-  return <button className="create-todo-button">+</button>;
-};
+  return (
+    <button
+      className="CreateTodoButton"
+      onClick={(event) => {
+        console.log("click!")
+        console.log(event)
+        console.log(event.target)
+      }}
+    >
+      +
+    </button>
+  )
+}

@@ -1,13 +1,18 @@
+import React from "react"
+import { CompleteIcon } from "./CompleteIcon"
+import { DeleteIcon } from "./DeleteIcon"
 import "./TodoItem.css"
 
-export const TodoItem = ({ text, completed, onComplete, onDelete }) => {
-  const itemClassName = completed ? "todo-item completed" : "todo-item"
-
+export const TodoItem = (props) => {
   return (
-    <li className={itemClassName}>
-      <span onClick={onComplete}>✓</span>
-      <p className="task-text">{text}</p>
-      <span onClick={onDelete}>x</span>
+    <li className="TodoItem">
+      <CompleteIcon completed={props.completed} onComplete={props.onComplete} />
+
+      <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
+        {props.text}
+      </p>
+
+      <DeleteIcon onDelete={props.onDelete} />
     </li>
   )
 }

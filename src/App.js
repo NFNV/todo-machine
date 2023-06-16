@@ -3,8 +3,9 @@ import { TodoList } from "./components/TodoList"
 import { TodoCounter } from "./components/TodoCounter"
 import { TodoSearch } from "./components/TodoSearch"
 import { TodoItem } from "./components/TodoItem"
-import { CreateTodoButton } from "./components/CreateTodoButton"
+import { CreateTodoButton } from "./components/CreateTodoButton/index.js"
 import { Title } from "./components/Title"
+import { useLocalStorage } from "./useLocalStorage"
 
 // const defaultTodos = [
 //   { text: "One", completed: false },
@@ -17,28 +18,6 @@ import { Title } from "./components/Title"
 // localStorage.setItem("TODOS_V1", JSON.stringify(defaultTodos))
 
 // localStorage.removeItem("TODOS_V1")
-
-function useLocalStorage(itemName, initialValue) {
-  const localStorageItem = localStorage.getItem(itemName)
-
-  let parsedItem
-
-  if (!localStorageItem) {
-    localStorage.setItem(itemName, JSON.stringify(initialValue))
-    parsedItem = initialValue
-  } else {
-    parsedItem = JSON.parse(localStorageItem)
-  }
-
-  const [item, setItem] = useState(parsedItem)
-
-  const saveItem = (newItem) => {
-    localStorage.setItem(itemName, JSON.stringify(newItem))
-    setItem(newItem)
-  }
-
-  return [item, saveItem]
-}
 
 function App() {
   const [todos, saveTodos] = useLocalStorage("TODOS_V1", [])

@@ -2,13 +2,30 @@ import React, { useState } from "react"
 import { useLocalStorage } from "./useLocalStorage"
 import { AppUI } from "./AppUI"
 
+// localStorage.removeItem("TODOS_V1")
+
+// const defaultTodos = [
+//   { text: "Item 1", completed: true },
+//   { text: "Item 2", completed: false },
+//   { text: "Item 3", completed: false },
+//   { text: "Item 4", completed: false },
+//   { text: "Item 5", completed: true },
+// ]
+
+// localStorage.setItem("TODOS_V1", JSON.stringify(defaultTodos))
+
 // The main component of the application
 function App() {
   // State variables
 
   // todos: Represents an array of todo items
   // saveTodos: Function to save/update the todos in local storage
-  const { item: todos, saveItem: saveTodos, loading, error } = useLocalStorage("TODOS_V1", [])
+  const {
+    item: todos,
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage("TODOS_V1", [])
 
   // searchValue: Represents the value entered in the search input field
   const [searchValue, setSearchValue] = useState("")

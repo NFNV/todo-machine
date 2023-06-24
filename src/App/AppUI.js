@@ -24,7 +24,7 @@ export const AppUI = ({
       <TodoList>
         {loading && <p>Loading...</p>}
         {error && <p>Error</p>}
-        {!loading && searchedTodos.length == 0 && <p>Create a TODO</p>}
+        {!loading && searchedTodos.length === 0 && <p>Create a TODO</p>}
         {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}

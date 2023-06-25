@@ -4,6 +4,9 @@ import { TodoSearch } from "../components/TodoSearch"
 import { TodoItem } from "../components/TodoItem"
 import { CreateTodoButton } from "../components/CreateTodoButton/index.js.js"
 import { Title } from "../components/Title"
+import { TodosLoading } from "../components/TodosLoading"
+import { TodosError } from "../components/TodosError"
+import { EmptyTodos } from "../components/EmptyTodos"
 
 export const AppUI = ({
   error,
@@ -22,9 +25,13 @@ export const AppUI = ({
       <TodoCounter completed={completedTodos} total={totalTodos} />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
-        {loading && <p>Loading...</p>}
-        {error && <p>Error</p>}
-        {!loading && searchedTodos.length === 0 && <p>Create a TODO</p>}
+        {loading && (
+          <>
+            <TodosLoading /> <TodosLoading /> <TodosLoading />
+          </>
+        )}
+        {error && <TodosError />}
+        {!loading && searchedTodos.length === 0 && <EmptyTodos />}
         {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}

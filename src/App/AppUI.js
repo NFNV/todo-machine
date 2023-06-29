@@ -9,7 +9,7 @@ import { TodosError } from "../components/TodosError"
 import { EmptyTodos } from "../components/EmptyTodos"
 import { TodoContext } from "../components/TodoContext"
 
-function AppUI() {
+export const AppUI = () => { 
   return (
     <>
       <Title />
@@ -46,5 +46,3 @@ function AppUI() {
     </>
   )
 }
-
-export { AppUI }

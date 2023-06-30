@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nfnv.github.io/todo-machine/static/css/main.e1226ede.css",
+    "main.js": "/nfnv.github.io/todo-machine/static/js/main.7d1b81b7.js",
+    "static/js/787.63e47474.chunk.js": "/nfnv.github.io/todo-machine/static/js/787.63e47474.chunk.js",
+    "index.html": "/nfnv.github.io/todo-machine/index.html",
+    "static/media/delete.svg": "/nfnv.github.io/todo-machine/static/media/delete.d9c7e0eeb3f573572e1521b7b69ed33e.svg",
+    "static/media/check.svg": "/nfnv.github.io/todo-machine/static/media/check.af03c9a6a0411e40578874e6f00e807b.svg",
+    "main.e1226ede.css.map": "/nfnv.github.io/todo-machine/static/css/main.e1226ede.css.map",
+    "main.7d1b81b7.js.map": "/nfnv.github.io/todo-machine/static/js/main.7d1b81b7.js.map",
+    "787.63e47474.chunk.js.map": "/nfnv.github.io/todo-machine/static/js/787.63e47474.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1226ede.css",
+    "static/js/main.7d1b81b7.js"
+  ]
+}

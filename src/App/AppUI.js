@@ -10,6 +10,7 @@ import { EmptyTodos } from "../components/EmptyTodos"
 import { TodoContext } from "../components/TodoContext"
 import { useContext } from "react"
 import { Modal } from "../components/Modal"
+import { TodoForm } from "../components/TodoForm"
 
 export const AppUI = () => {
   const {
@@ -47,9 +48,13 @@ export const AppUI = () => {
           />
         ))}
       </TodoList>
-      <CreateTodoButton setOpenModal={setOpenModal}/>
+      <CreateTodoButton setOpenModal={setOpenModal} />
 
-      {openModal && <Modal>asdasd</Modal>}
+      {openModal && (
+        <Modal>
+          <TodoForm />
+        </Modal>
+      )}
     </>
   )
 }

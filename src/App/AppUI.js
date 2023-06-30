@@ -9,10 +9,18 @@ import { TodosError } from "../components/TodosError"
 import { EmptyTodos } from "../components/EmptyTodos"
 import { TodoContext } from "../components/TodoContext"
 import { useContext } from "react"
+import { Modal } from "../components/Modal"
 
 export const AppUI = () => {
-  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
-    useContext(TodoContext)
+  const {
+    loading,
+    error,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+  } = useContext(TodoContext)
   return (
     <>
       <Title />
@@ -39,7 +47,9 @@ export const AppUI = () => {
           />
         ))}
       </TodoList>
-      <CreateTodoButton />
+      <CreateTodoButton setOpenModal={setOpenModal}/>
+
+      {openModal && <Modal>asdasd</Modal>}
     </>
   )
 }

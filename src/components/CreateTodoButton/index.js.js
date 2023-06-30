@@ -1,14 +1,12 @@
 import React from "react"
 import "./CreateTodoButton.css"
 
-export const CreateTodoButton = () => {
+export const CreateTodoButton = ({ setOpenModal }) => {
   return (
     <button
       className="CreateTodoButton"
-      onClick={(event) => {
-        console.log("click!")
-        console.log(event)
-        console.log(event.target)
+      onClick={() => {
+        setOpenModal((state) => !state)
       }}
     >
       +
